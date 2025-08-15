@@ -1,0 +1,43 @@
+
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* font-family:  Bebas Neue; */
+  font-family: Graphique;
+ 
+}
+
+:root {
+  --bs-body-font-family: Graphique;
+}
+
+
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+:root {
+  --bs-body-bg: #000;
+  --bs-body-color: #fff;
+  --bs-link-color: #fff;
+  --bs-link-hover-color: #ccc;
+  --bs-border-color: #444; /* subtle borders */
+}
+
+body {
+  background-color: #000 !important; /* Force override */
+  color: #fff !important;
+   margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
