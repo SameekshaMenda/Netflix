@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import { FavoritesContext } from '../context/FavoritesContext';
-import '../style/MovieCard.css';
+import '../style/Moviecard.css';
 
 export default function MovieCard({ movie }) {
   const { add, remove, isFav } = useContext(FavoritesContext);
