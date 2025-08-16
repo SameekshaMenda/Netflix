@@ -11,15 +11,21 @@ export default function MovieCard({ movie }) {
   return (
     <div className="movie-card">
       <div className="poster-wrap">
-        <img src={movie.poster} alt={movie.title} className="poster" />
+        <img src={movie.poster[1]} alt={movie.title} className="poster" />
 
         <div className="overlay">
-          {/* Bottom section containing info + actions */}
+         
           <div className="overlay-bottom">
             <h6 className="movie-title fs-3">{movie.title}</h6>
             <div className="movie-info">
-              <small className="text-white ">{movie.genres}</small>
-              <small className="text-white m-1">{movie.year ? movie.year.slice(0, 4) : "N/A"}</small>
+              <small className="text-white">
+                {Array.isArray(movie.genres)
+                  ? movie.genres.join(" ")
+                  : movie.genres}
+              </small>
+              <small className="text-white m-1">
+                {movie.year ? movie.year.slice(0, 4) : "N/A"}
+              </small>
             </div>
 
             <div className="movie-actions">
@@ -35,7 +41,7 @@ export default function MovieCard({ movie }) {
                 {fav ? <FaHeart /> : <FaRegHeart />}
               </button>
 
-              <button className="btn btn-sm btn-outline-light text-white rating-btn" style={{backgroundColor:"transparent"}}>
+              <button className="btn btn-sm btn-outline-light text-white rating-btn" style={{ backgroundColor: "transparent" }}>
                 {movie.rating}
               </button>
             </div>
@@ -43,7 +49,7 @@ export default function MovieCard({ movie }) {
         </div>
       </div>
 
-      
+
     </div>
   );
 }

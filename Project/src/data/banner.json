@@ -1,7 +1,17 @@
 [
+     {
+
+    "video": "https://www.youtube.com/watch?v=GV3HUDMQ-F8"
+  }
+  ,
     {
         "title": "Welcome to Netflix",
-        "description": "Join Netflix to watch the latest movies, TV shows and award-wining Netflix Originals",
-        "image": "/posters/netflix6.jpg"
+        "description": "Join Netflix to watch the latest movies, TV shows",
+        "image": "/posters/netflix5.jpg"
     }
+    
+    
+
+    
+   
 ]

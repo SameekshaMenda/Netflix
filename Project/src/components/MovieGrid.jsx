@@ -7,13 +7,11 @@ export default function MovieGrid({ movies, favorites, toggleFavorite, loading =
   const [query, setQuery] = useState('');
   const [genre, setGenre] = useState('All');
 
-  // generate genre list dynamically
   const genres = useMemo(
     () => ['All', ...new Set(movies.flatMap(m => m.genres))],
     [movies]
   );
 
-  // filter based on query + genre
   const filteredMovies = movies.filter((m) => {
     const matchesQuery = m.title.toLowerCase().includes(query.toLowerCase());
     const matchesGenre = genre === 'All' || m.genres.includes(genre);

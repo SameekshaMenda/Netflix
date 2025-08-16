@@ -37,48 +37,43 @@ function Navbar() {
   };
 
   return (
-    <nav className={`navbar navbar-expand-lg ${dark ? `navbar-dark `: 'navbar-light'} bg-black px-3`}>
-      <Link className="navbar-brand text-white" to="/">
-        <img src={icon} alt="logo" style={{ height: "80px" }} />
-      </Link>
-      <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse " id="navMenu">
-        <ul className="navbar-nav me-auto">
-          <li className="nav-item"><Link className="nav-link text-light" to="/">Home</Link></li>
-          <li className="nav-item">
-            <Link className="nav-link text-light" to="/favorites">
-              Favorites 
-            </Link>
-          </li>
-        </ul>
+    <nav className={`navbar navbar-expand-lg fixed-top ${dark ? `navbar-dark` : 'navbar-light'} bg-black px-3`}>
+  <Link className="navbar-brand text-white" to="/">
+    <img src={icon} alt="logo" style={{ height: "60px" }} />
+  </Link>
+  <button className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+  <div className="collapse navbar-collapse" id="navMenu">
+    <ul className="navbar-nav me-auto">
+      <li className="nav-item"><Link className="nav-link text-light" to="/">Home</Link></li>
+      <li className="nav-item"><Link className="nav-link text-light" to="/favorites">Favorites</Link></li>
+    </ul>
 
-        {/* Genre Dropdown */}
-        <select className="form-select me-3" style={{ width: '150px' }} value={genre} onChange={handleGenreChange}>
-          <option value="">All Genres</option>
-          {genres.map((g, i) => (
-            <option key={i} value={g}>{g}</option>
-          ))}
-        </select>
+    {/* Responsive controls */}
+    <div className="d-flex flex-column flex-lg-row align-items-lg-center gap-2">
+      <select className="form-select" style={{ maxWidth: '150px' }} value={genre} onChange={handleGenreChange}>
+        <option value="">All Genres</option>
+        {genres.map((g, i) => <option key={i} value={g}>{g}</option>)}
+      </select>
 
-        {/* Search form */}
-        <form className="d-flex me-3" onSubmit={submit}>
-          <input
-            className="form-control me-2"
-            placeholder="Search movies..."
-            value={query}
-            onChange={e => setQuery(e.target.value)}
-          />
-          <button className="btn btn-outline-light" type="submit">Search</button>
-        </form>
+      <form className="d-flex w-100" onSubmit={submit}>
+        <input
+          className="form-control"
+          placeholder="Search movies..."
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+        />
+        <button className="btn btn-outline-light ms-2" type="submit">Search</button>
+      </form>
+    </div>
 
-        {/* Theme toggle */}
-        <button className="btn btn-outline-light" onClick={toggle} title="Toggle theme">
-          {dark ? <FaSun /> : <FaMoon />}
-        </button>
-      </div>
-    </nav>
+    <button className="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0" onClick={toggle} title="Toggle theme">
+      {dark ? <FaSun /> : <FaMoon />}
+    </button>
+  </div>
+</nav>
+
   );
 }
 

@@ -16,9 +16,9 @@ function MovieDetails() {
   const fav = isFav(movie.id);
 
   return (
-    <div className={`container-fluid p-4 ${dark ? 'bg-black text-white' : 'bg-light text-dark'}`}>
+    <div className={`container-fluid min-vh-100 mt-5 p-5 ${dark ? 'bg-black text-white' : 'bg-light text-dark'}`}>
       <button 
-        className={`btn mb-3 ${dark ? 'btn-outline-light' : 'btn-outline-dark'}`} 
+        className={`btn mb-3  ${dark ? 'btn-outline-light' : 'btn-outline-dark'}`} 
         onClick={() => navigate(-1)}
       >
         Back
@@ -26,12 +26,12 @@ function MovieDetails() {
 
       <div className="row">
         <div className="col-md-4">
-          <img src={movie.poster} alt={movie.title} className="img-fluid rounded" />
+          <img src={movie.poster[1]} alt={movie.title} className="img-fluid rounded" />
         </div>
         <div className="col-md-8">
           <h2>{movie.title}</h2>
           <p>{movie.description}</p>
-          <small>{movie.genres.join(', ')} • {movie.releaseDate?.slice(0,4) || "N/A"}</small>
+          <small>{movie.genres.join(', ')} • {movie.year?.slice(0,4) || "N/A"}</small>
           <div className="mt-3">
             <button
               className={`btn me-2 ${fav ? 'btn-danger' : (dark ? 'btn-outline-light' : 'btn-outline-dark')}`}

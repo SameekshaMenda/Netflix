@@ -5,7 +5,7 @@ export const FavoritesContext = createContext();
 
 export function FavoritesProvider({ children }) {
 
-    // initialize the state with the localstorage
+
     const [favorites, setFavorites] = useState(() => {
         try {
             const savedFav = localStorage.getItem("favorites");
@@ -15,13 +15,13 @@ export function FavoritesProvider({ children }) {
             return [];
         }
     });
-    // keeps local storage in sync
+  
     useEffect(() => {
         localStorage.setItem("favorites", JSON.stringify(favorites));
 
     }, [favorites]);
     
-    // functions to manage favorites
+ 
     const add = (movie) => {
         setFavorites(prev => {
             if (prev.find(m => m.id === movie.id))

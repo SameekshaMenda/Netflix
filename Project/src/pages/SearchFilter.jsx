@@ -24,8 +24,8 @@ function SearchFilter() {
   }
 
   return (
-    <div className={`container-fluid  p-4 ${dark ? 'bg-black text-white' : 'bg-light text-dark'}`}>
-      <h4 className='text'>
+    <div className={`container-fluid min-vh-100 p-4 ${dark ? 'bg-black text-white' : 'bg-light text-dark'}`}>
+      <h4 className=' text pt-5 mt-5'>
         {q && `Search results for: ${q}`}
         {genre && `Genre: ${genre}`}
       </h4>

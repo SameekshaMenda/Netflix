@@ -1,65 +1,233 @@
 [
   {
     "id": 1,
-    "title": "saiyaara",
-    "poster": "/posters/saiyara.jpg",
-    "genres": ["Adventure"],
+    "title": "Saiyaara",
+    "poster": [
+      "/posters/saiyara.jpg",
+      "/posters/saiyara.jpg"
+    ],
+    "genres": [
+      "Adventure"
+    ],
     "year": "2023",
     "rating": "8.1",
-    "isTrending" : true ,
-    "description": "A crew travels beyond known space to find a new home."
+    "isTrending": true,
+    "description": "In a world where humanity’s survival depends on courage, a group of explorers embarks on a thrilling journey across uncharted lands. Battling nature, enemies, and themselves, they must find a way to bring hope back home.",
+    "caption": "An epic adventure of courage and discovery."
   },
   {
     "id": 2,
     "title": "War 2",
-    "poster": "/posters/war2.jpg",
-    "genres": ["Sci-Fi"],
-    "year": "2023",
+    "poster": [
+      "/posters/war.jpg",
+      "/posters/war2.jpg"
+    ],
+    "genres": [
+      "Sci-Fi"
+    ],
+    "year": "2025",
     "rating": "8.1",
-    "isTrending" : true ,
-    "description": "A crew travels beyond known space to find a new home."
+    "isTrending": true,
+    "description": "The world is on the brink of collapse as futuristic soldiers clash in a war that will decide the fate of humanity. With alliances shifting and secrets revealed, one warrior must rise to end the chaos.",
+    "caption": "A futuristic war with humanity’s fate at stake."
   },
   {
     "id": 3,
     "title": "Om Shanti Om",
-    "poster": "/posters/OmShantiOm.jpg",
-    "genres": ["Classic"],
+    "poster": [
+      "/posters/OmShantiOm.jpg",
+      "/posters/OmShantiOm.jpg"
+    ],
+    "genres": [
+      "Classic"
+    ],
     "year": "2023",
     "rating": "8.1",
-    "isTrending" : true ,
-    "description": "A crew travels beyond known space to find a new home."
+    "isTrending": true,
+    "description": "A timeless tale of love, destiny, and reincarnation. When a struggling actor’s life is tragically cut short, fate gives him another chance to rewrite his story and reunite with his true love.",
+    "caption": "Love and destiny across lifetimes."
   },
   {
     "id": 4,
     "title": "Yeh Jawaani Heh Deewani",
-    "poster": "/posters/yjhd.jpg",
-    "genres": ["Friends"],
+    "poster": [
+      "/posters/yjhd.jpg",
+      "/posters/yjhd.jpg"
+    ],
+    "genres": [
+      "Friends"
+    ],
     "year": "2020",
     "rating": "8.1",
-    "isTrending" : true ,
-    "description": "A crew travels beyond known space to find a new home."
+    "isTrending": false,
+    "description": "A heartwarming journey of friendship, love, and self-discovery. Four friends explore the beauty of youth, chasing dreams while learning that life’s true adventure lies in the bonds we share.",
+    "caption": "Friendship, love, and chasing dreams."
   },
   {
     "id": 5,
     "title": "Dear Zindagi",
-    "poster": "/posters/DearZindagi.jpg",
-    "genres": ["Adventure"],
+    "poster": [
+      "/posters/DearZindagi.jpg",
+      "/posters/DearZindagi.jpg"
+    ],
+    "genres": [
+      "Adventure"
+    ],
     "year": "2023",
     "rating": "8.1",
-    "isTrending" : true ,
-    "description": "A crew travels beyond known space to find a new home."
+    "isTrending": true,
+    "description": "A young woman struggling with heartbreak and insecurities finds guidance from an unconventional therapist. Together, they explore life’s challenges and the beauty of embracing imperfections.",
+    "caption": "Finding happiness in life’s imperfections."
   },
   {
     "id": 6,
     "title": "Aladdin",
-    "poster": "/posters/Aladdin.jpg",
-    "genres": ["Fantasy"],
+    "poster": [
+      "/posters/Aladdin.jpg",
+      "/posters/Aladdin.jpg"
+    ],
+    "genres": [
+      "Fantasy"
+    ],
     "year": "2023",
     "rating": "8.1",
-    "isTrending" : true ,
-    "description": "A crew travels beyond known space to find a new home."
+    "isTrending": true,
+    "description": "Step into a magical world where a street-smart young man discovers a mystical lamp that holds a powerful genie. With love, power, and destiny at play, Aladdin must choose between greed and goodness.",
+    "caption": "A magical tale of love and destiny."
+  },
+  {
+    "id": 7,
+    "title": "Param Sundari",
+    "poster": [
+      "/posters/ParamSundari.jpg",
+      "/posters/ParamSundari.jpg"
+    ],
+    "genres": [
+      "Musical",
+      "Drama"
+    ],
+    "year": "2025",
+    "rating": "7.7",
+    "isTrending": false,
+    "description": "A vibrant musical journey celebrating beauty, self-expression, and dance. Param Sundari is a dazzling showcase of rhythm, style, and the joy of performance.",
+    "caption": "A song that celebrates beauty and spirit."
+  },
+  {
+    "id": 8,
+    "title": "Kantara",
+    "poster": [
+      "/posters/kantara.jpg",
+      "/posters/kantara.jpg"
+    ],
+    "genres": [
+      "Thriller",
+      "Mystery"
+    ],
+    "year": "2022",
+    "rating": "8.4",
+    "isTrending": true,
+    "description": "Set in the coastal village of Karnataka, Kantara explores the clash between tradition, folklore, and modernity. When ancient deities awaken, the line between myth and reality blurs, leading to a powerful story of faith and survival.",
+    "caption": "A divine tale of folklore and fate."
+  },
+  {
+    "id": 9,
+    "title": "Doraemon",
+    "poster": [
+      "/posters/doremon.jpg",
+      "/posters/doremon.jpg"
+    ],
+    "genres": [
+      "Animation",
+      "Family"
+    ],
+    "year": "1979",
+    "rating": "8.0",
+    "isTrending": false,
+    "description": "Doraemon, a robotic cat from the 22nd century, travels back in time to help a boy named Nobita overcome challenges. With futuristic gadgets, their adventures bring fun, laughter, and life lessons.",
+    "caption": "A robot cat and a boy against life’s odds."
+  },
+  {
+    "id": 10,
+    "title": "Shinchan",
+    "poster": [
+      "/posters/sinchan.jpg",
+      "/posters/sinchan.jpg"
+    ],
+    "genres": [
+      "Animation",
+      "Comedy"
+    ],
+    "year": "1992",
+    "rating": "8.2",
+    "isTrending": true,
+    "description": "Shinnosuke Nohara, a mischievous 5-year-old, causes chaos everywhere he goes with his witty humor, hilarious antics, and innocent mischief that entertains kids and adults alike.",
+    "caption": "The little prankster who makes everyone laugh."
+  },
+  {
+    "id": 11,
+    "title": "Whispers in the Dark",
+    "poster": [
+      "/posters/whispers.jpg",
+      "/posters/whispers.jpg"
+    ],
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "year": "2021",
+    "rating": "7.5",
+    "isTrending": false,
+    "description": "A family moves into an old countryside mansion, only to discover it hides a dark secret. Mysterious whispers, eerie shadows, and unexplainable horrors soon reveal the house’s terrifying past.",
+    "caption": "When silence speaks, terror begins."
+  },
+  {
+    "id": 12,
+    "title": "Tourist Family",
+    "poster": [
+      "/posters/tourist.jpg",
+      "/posters/tourist.jpg"
+    ],
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "year": "2023",
+    "rating": "7.9",
+    "isTrending": true,
+    "description": "A quirky family sets out on a vacation abroad, only for things to go hilariously wrong. From language mix-ups to cultural shocks, their journey becomes an unforgettable rollercoaster of laughter.",
+    "caption": "One trip, endless chaos."
+  },
+  {
+    "id": 13,
+    "title": "Wednesday",
+    "poster": [
+      "/posters/wednesday.jpg",
+      "/posters/wednesday.jpg"
+    ],
+    "genres": [
+      "Mystery",
+      "Fantasy"
+    ],
+    "year": "2022",
+    "rating": "8.1",
+    "isTrending": true,
+    "description": "At Nevermore Academy, Wednesday Addams discovers her psychic abilities while solving a murder mystery that involves her family’s dark past. Filled with gothic charm and supernatural twists.",
+    "caption": "Dark, witty, and full of mystery."
+  },
+  {
+    "id": 14,
+    "title": "Su From So",
+    "poster": [
+      "/posters/Su-From-So.jpg",
+      "/posters/Su-From-So-poster.jpg"
+    ],
+    "genres": [
+      "Comedy"
+    ],
+    "year": "2025",
+    "rating": "8.1",
+    "isTrending": false,
+    "description": "Two best friends set out on a hilarious journey filled with awkward moments, quirky characters, and unexpected twists. In their search for a new home, they realize the funniest adventures are the ones they never planned.",
+    "caption": "A comedy of friendship and chaos."
   }
-
-
-
 ]
