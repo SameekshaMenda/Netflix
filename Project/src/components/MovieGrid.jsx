@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import MovieCard from './MovieCard';
 import SearchFilter from './SearchFliter'
 import LoadingSpinner from './LoadingSpinner';
-
+import '../style/Moviegrid.css'
 export default function MovieGrid({ movies, favorites, toggleFavorite, loading = false }) {
   const [query, setQuery] = useState('');
   const [genre, setGenre] = useState('All');
@@ -35,9 +35,9 @@ export default function MovieGrid({ movies, favorites, toggleFavorite, loading =
       {filteredMovies.length === 0 ? (
         <p>No movies found matching your search.</p>
       ) : (
-        <div className="row g-3">
+        <div className="movie-grid">
           {filteredMovies.map((m) => (
-            <div key={m.id} className="col-6 col-sm-4 col-md-3">
+            <div key={m.id} className="col-4 col-sm-3 col-md-2">
               <MovieCard
                 movie={m}
                 onFavoriteToggle={toggleFavorite}

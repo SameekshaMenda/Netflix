@@ -15,7 +15,7 @@ function LatestMovie() {
       />
 
       <div
-        className="hero-overlay p-3 p-md-5"
+        className="hero-overlay p-0 p-md-5"
         style={{
           position: "absolute",
           left: 0,
