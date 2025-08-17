@@ -14,29 +14,29 @@ function SearchFilter() {
   let filtered = moviesData;
 
   if (q) {
-    filtered = filtered.filter(m => m.title.toLowerCase().includes(q.toLowerCase()));
+      filtered = filtered.filter(m => m.title.toLowerCase().includes(q.toLowerCase()));
   }
   if (genre) {
-    filtered = filtered.filter(m =>
-      Array.isArray(m.genres) &&
-      m.genres.some(g => g.toLowerCase() === genre.toLowerCase())
-    );
+      filtered = filtered.filter(m =>
+          Array.isArray(m.genres) &&
+          m.genres.some(g => g.toLowerCase() === genre.toLowerCase())
+      );
   }
 
   return (
-    <div className="row g-3 px-3">
-  {filtered.length === 0 ? (
-    <p className="text-muted">No matches found...</p>
-  ) : (
-    filtered.map((m) => (
-      <div key={m.id} className="col-6 col-sm-4 col-md-3 col-lg-2">
-        <MovieCard movie={m} dark={dark} />
+    <div className={`container-fluid min-vh-100 p-4 ${dark ? 'bg-black text-white' : 'bg-light text-dark'}`}>
+      <h4 className=' text pt-5 mt-5'>
+        {q && `Search results for: ${q}`}
+        {genre && `Genre: ${genre}`}
+      </h4>
+
+      <div className='d-flex flex-wrap' style={{ gap: "18px" }}>
+        {filtered.length === 0
+            ? <p className='text-muted'>No matches found...</p>
+            : filtered.map(m => <MovieCard key={m.id} movie={m} dark={dark} />)
+        }
       </div>
-    ))
-  )}
-</div>
-
-
+    </div>
   );
 }
 
